@@ -67,13 +67,13 @@ if (verifying) {
 
                     {/* hero text */}
                     <Text style={styles.heading}>Verify Email</Text>
-                    <Text style={styles.subheading}>we have send 6-degit verification code to {email}.</Text>
+                    <Text style={styles.subheading}>We have send 6-degit verification code to {email}.</Text>
 
                     {/* Form */}
                     <View style={styles.form}>
 
                         <View style={styles.field}>
-                            <Text style={styles.fieldLabel}>verification Code</Text>
+                            <Text style={styles.fieldLabel}>Verification Code</Text>
                             <TextInput style={styles.input}
                                 value={verificationCode}
                                 onChangeText={setVerificationCode} 
@@ -85,7 +85,7 @@ if (verifying) {
 
                         {/* Bach ti sign up link */}
                        <View style={styles.toggleRow}>
-                            <Text style={styles.toggleText}>Did not recive a code?</Text>
+                            <Text style={styles.toggleText}>Did not receive a code?</Text>
                             <TouchableOpacity onPress={() => setVerifying(false)}>
                                 <Text style={styles.toggleLink}>Go back</Text>
                             </TouchableOpacity>
@@ -126,8 +126,8 @@ if (verifying) {
                     </View>
 
                     {/* hero text */}
-                    <Text style={styles.heading}>{mode === "login" ? "Welocome back" : "Create accounts"}</Text>
-                    <Text style={styles.subheading}>{mode === "login" ? "Signin to continue chatting" : "Fill in your details to get started"}</Text>
+                    <Text style={styles.heading}>{mode === "login" ? "Welocome back" : "Create account"}</Text>
+                    <Text style={styles.subheading}>{mode === "login" ? "Sign in to continue chatting" : "Fill in your details to get started"}</Text>
 
                     {/* Form */}
                     <View style={styles.form}>
@@ -164,7 +164,7 @@ if (verifying) {
                                 placeholder='You@example.com'
                                 placeholderTextColor={Colors.outlineVariant}
                                 keyboardType='email-address'
-                                autoCapitalize='words' />
+                                autoCapitalize='none' />
                         </View>
 
                         <View style={styles.field}>
